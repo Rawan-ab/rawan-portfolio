@@ -1,0 +1,3 @@
+const items=document.querySelectorAll('.reveal');
+if('IntersectionObserver'in window){const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('show');io.unobserve(e.target)}}),{threshold:.1});items.forEach(x=>io.observe(x));}else items.forEach(x=>x.classList.add('show'));
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{const id=a.getAttribute('href');if(id==='#')return;e.preventDefault();document.querySelector(id)?.scrollIntoView({behavior:'smooth'});}));
