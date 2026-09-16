@@ -1,0 +1,1 @@
+Portfolio visual assets used by the homepage.
