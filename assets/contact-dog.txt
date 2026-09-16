@@ -1,0 +1,1 @@
+Image asset is embedded in style.css as a data URI for deployment portability.
