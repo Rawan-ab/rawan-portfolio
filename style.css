@@ -536,3 +536,5 @@ p{margin:0;}
 .card-laffha .laffha-media-label{left:16px;right:16px;bottom:12px;z-index:1;background:#5f35a7;color:#fff;box-shadow:0 9px 18px -13px #3d2361}
 .card-laffha .card-primary{background:#5f35a7;color:#fff;padding:10px 17px}
 .card-laffha .card-primary:hover{background:#482482}
+.card-laffha .laffha-preview img{width:165%;left:-32.5%;top:-32%;height:auto;max-width:none}
+.card-laffha .laffha-media-label{font-family:var(--sans);letter-spacing:.03em}
