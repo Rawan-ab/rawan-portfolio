@@ -542,5 +542,12 @@ p{margin:0;}
 
 /* Reading2Gather case-study entry */
 .tools-row{gap:clamp(18px,2vw,30px)}
-.card-reading .card-actions .card-primary{background:#8E705A!important;color:#fff!important}
-.card-reading .card-actions .card-primary:hover{background:#765A46!important}
+.card-reading .card-actions .card-primary{background:#4b83b5!important;color:#fff!important}
+.card-reading .card-actions .card-primary:hover{background:#2d679e!important}
+
+
+/* Reading2Gather blue case-study treatment */
+.card-reading .card-media{aspect-ratio:1/1.05;padding:20px 22px 0;background:linear-gradient(145deg,#eaf4f8,#c5dced)!important;}
+.card-reading .card-media .reading-app-preview{height:100%;width:auto;max-width:100%;object-fit:contain;object-position:center bottom;display:block;border-radius:22px 22px 0 0;box-shadow:0 16px 32px rgba(22,47,71,.2)}
+.card-reading .card-arrow{color:#2d679e;border-color:#b8d0e1}
+.card-reading .card:hover .card-arrow{background:#4b83b5;color:#fff;border-color:#4b83b5}
