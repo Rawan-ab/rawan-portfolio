@@ -572,3 +572,19 @@ p{margin:0;}
 .work-track .card:hover .card-arrow{background:var(--card-accent);border-color:var(--card-accent);color:#fff}
 .card-matcha .card-media svg,.card-tawazon .card-media svg{transform:scale(1.2)}
 @media(max-width:700px){.card-label{font-size:9px}.work-track .card .card-actions{margin-top:14px}}
+
+/* Skills and tools grouped by practice area */
+.tools-heading{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;margin-bottom:26px}
+.tools-intro{font-size:15px;color:var(--muted-text);margin-top:8px;max-width:58ch}
+.tools-groups{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.tool-group{border:1px solid var(--border);border-radius:22px;background:#F8F2EA;padding:22px;min-width:0}
+.tool-group:nth-child(1){background:#F1F6F8}
+.tool-group:nth-child(2){background:#F7F4EC}
+.tool-group:nth-child(3){background:#F1F4EF}
+.tool-group h3{font-family:var(--sans);font-size:14px;letter-spacing:.04em;color:#243F56;margin-bottom:20px}
+.tool-group .tools-row{display:flex;align-items:flex-start;justify-content:flex-start;gap:18px 14px;flex-wrap:wrap;margin-top:0}
+.tool-group .tool{width:72px;gap:8px}
+.tool-group .tool span{font-size:12px;text-align:center;line-height:1.25}
+.tools-heading .tools-hand{margin-left:0;width:auto;flex:none}
+@media(max-width:1000px){.tools-groups{grid-template-columns:repeat(2,minmax(0,1fr))}}
+@media(max-width:680px){.tools-groups{grid-template-columns:1fr}.tools-heading{align-items:flex-start}.tools-heading .tools-hand{font-size:19px}.tool-group{padding:20px}}
