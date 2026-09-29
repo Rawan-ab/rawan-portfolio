@@ -588,3 +588,9 @@ p{margin:0;}
 .tools-heading .tools-hand{margin-left:0;width:auto;flex:none}
 @media(max-width:1000px){.tools-groups{grid-template-columns:repeat(2,minmax(0,1fr))}}
 @media(max-width:680px){.tools-groups{grid-template-columns:1fr}.tools-heading{align-items:flex-start}.tools-heading .tools-hand{font-size:19px}.tool-group{padding:20px}}
+
+/* Icon-first software skills with accessible names */
+.tool-group .tool{width:64px;gap:0}
+.tool-group .tool-logo{height:58px;width:58px;border:1px solid rgba(48,70,90,.1);border-radius:16px;background:rgba(255,255,255,.78);box-shadow:0 6px 16px -12px rgba(35,52,70,.4)}
+.tool-group .tool-logo svg{height:32px;width:32px}
+.tool-group .tool .tool-name{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
