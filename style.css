@@ -538,3 +538,45 @@ p{margin:0;}
 .card-laffha .card-primary:hover{background:#482482}
 .card-laffha .laffha-preview img{width:165%;left:-32.5%;top:-32%;height:auto;max-width:none}
 .card-laffha .laffha-media-label{font-family:var(--sans);letter-spacing:.03em}
+
+
+/* Reading2gether card: match the tall, warm project preview reference */
+.card-reading .card-media{
+  background:linear-gradient(180deg,#EAD7C3 0%,#DDBFA4 100%);
+}
+@media (max-width:680px){
+  .card-reading{border-radius:clamp(30px,9.4vw,58px);}
+  .card-reading .card-media{
+    aspect-ratio:1.24;
+    padding:0;
+  }
+  .card-reading .card-body{
+    min-height:clamp(380px,97vw,646px);
+    padding:clamp(24px,7.8vw,46px);
+    gap:.5rem;
+  }
+  .card-reading .card-top{align-items:center;}
+  .card-reading .card-top h3{font-size:clamp(28px,7.8vw,46px);}
+  .card-reading .card-sub{font-size:clamp(15px,4.3vw,26px);line-height:1.3;}
+  .card-reading .card-arrow{
+    width:clamp(50px,13vw,76px);
+    height:clamp(50px,13vw,76px);
+    background:#B1ADA7;
+    border-color:#958F87;
+    color:#716B64;
+  }
+  .card-reading .card-arrow svg{
+    width:clamp(18px,4vw,24px);
+    height:clamp(18px,4vw,24px);
+  }
+  .card-reading .card-desc{
+    margin-top:clamp(10px,3vw,20px);
+    font-size:clamp(16px,4.7vw,28px);
+    line-height:1.65;
+  }
+  .card-reading .tags{gap:12px;padding-top:14px;}
+  .card-reading .tag{
+    padding:.38em .85em;
+    font-size:clamp(15px,4vw,24px);
+  }
+}
