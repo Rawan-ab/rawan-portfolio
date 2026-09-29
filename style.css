@@ -541,5 +541,6 @@ p{margin:0;}
 
 
 /* Reading2Gather case-study entry */
-.card-reading .card-primary{background:#8E705A;color:#fff}
-.card-reading .card-primary:hover{background:#765A46}
+.tools-row{gap:clamp(18px,2vw,30px)}
+.card-reading .card-actions .card-primary{background:#8E705A!important;color:#fff!important}
+.card-reading .card-actions .card-primary:hover{background:#765A46!important}
