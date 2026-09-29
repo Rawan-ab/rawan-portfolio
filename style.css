@@ -538,3 +538,8 @@ p{margin:0;}
 .card-laffha .card-primary:hover{background:#482482}
 .card-laffha .laffha-preview img{width:165%;left:-32.5%;top:-32%;height:auto;max-width:none}
 .card-laffha .laffha-media-label{font-family:var(--sans);letter-spacing:.03em}
+
+
+/* Reading2Gather case-study entry */
+.card-reading .card-primary{background:#8E705A;color:#fff}
+.card-reading .card-primary:hover{background:#765A46}
