@@ -1012,3 +1012,16 @@ h1,h2,h3,h4{font-family:"Playfair Display",Georgia,serif}
   mask-image:linear-gradient(90deg,transparent 0%,rgba(0,0,0,.32) 15%,#000 38%);
  }
 }
+
+:root{--space-1:8px;--space-2:16px;--space-3:24px;--space-4:40px;--space-5:64px;--space-6:96px}
+.work-title{font-family:var(--serif);font-size:clamp(26px,2.4vw,36px);font-weight:500;line-height:1.1;letter-spacing:-.035em;text-transform:none;color:var(--text)}
+.work-head{gap:18px}
+.tools-groups{grid-template-columns:minmax(0,.9fr) minmax(0,1.7fr) minmax(0,.9fr);gap:24px}
+.tool-group{border:0!important;background:transparent!important;box-shadow:none!important;padding:0!important;min-height:0!important}
+.tool-group h3{margin:0 0 20px!important}
+.tools-row{display:flex;flex-wrap:wrap;align-items:flex-start;justify-content:flex-start;gap:18px 22px}
+.tool{min-width:64px}.tool-logo{width:42px;height:42px;display:grid;place-items:center}.tool-logo svg{width:38px;height:38px;max-width:100%;max-height:100%;object-fit:contain}
+.site-footer .footer-links{display:flex;gap:16px;margin-top:12px;font-size:13px}.site-footer .footer-links a{color:var(--muted-text);text-decoration:underline;text-decoration-color:var(--border);text-underline-offset:4px}
+.card-cx .cx-card-media{background:#e7eef1}
+@media(max-width:900px){.tools-groups{grid-template-columns:1fr 1.6fr 1fr;gap:18px}}
+@media(max-width:680px){.tools-groups{grid-template-columns:1fr}.tools-row{gap:18px 15px}.work-title{font-size:29px}.site-footer .footer-links{flex-wrap:wrap}}
