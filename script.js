@@ -9,7 +9,7 @@ if(!track||!prev||!next||!counter)return;
 var cards=Array.prototype.slice.call(track.children),activeFilter='all',page=0;
 function pad(n){return(n<10?'0':'')+n}
 function pageSize(){return window.matchMedia('(max-width:680px)').matches?1:(window.matchMedia('(max-width:1240px)').matches?2:4)}
-function filteredCards(){return cards.filter(function(card){return activeFilter==='all'||(card.getAttribute('data-categories')||'').split(/\\s+/).indexOf(activeFilter)>-1})}
+function filteredCards(){return cards.filter(function(card){return activeFilter==='all'||(card.getAttribute('data-categories')||'').split(/\s+/).indexOf(activeFilter)>-1})}
 function render(){
  var size=pageSize(),items=filteredCards(),pages=Math.max(1,Math.ceil(items.length/size));
  page=Math.max(0,Math.min(page,pages-1));
