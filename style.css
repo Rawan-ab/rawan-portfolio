@@ -837,3 +837,14 @@ p{margin:0;}
  .hero-figure{height:auto;aspect-ratio:1.48;min-height:0;max-height:none}
  .hero-copy h1{font-size:clamp(36px,10vw,54px)}
 }
+
+.tools-heading>div{display:contents}
+.tools-heading>.eyebrow,.tools-heading>div>.eyebrow{grid-column:1;grid-row:1}
+.tools-heading .tools-intro{grid-column:2;grid-row:1;align-self:center}
+.tools-groups .tool-group:nth-child(2) .tools-row{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));row-gap:14px}
+.tools-groups .tool-group:nth-child(2) .tool{width:auto;flex:none}
+@media(max-width:680px){
+ .tools-heading>div{display:block}
+ .tools-heading .tools-intro{margin-top:5px}
+ .tools-groups .tool-group:nth-child(2) .tools-row{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
