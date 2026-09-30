@@ -16,7 +16,7 @@ function render(){
  var visible=items.slice(page*size,(page+1)*size);
  cards.forEach(function(card){card.hidden=visible.indexOf(card)===-1});
  track.classList.toggle('is-short-page',size>1&&visible.length>0&&visible.length<size);
- counter.textContent=pad(page+1)+' \\u2014 '+pad(pages);
+ counter.textContent=pad(page+1)+' — '+pad(pages);
  prev.disabled=page===0;next.disabled=page===pages-1;
 }
 function go(step){
