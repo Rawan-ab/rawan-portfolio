@@ -984,3 +984,13 @@ h1,h2,h3,h4{font-family:"Playfair Display",Georgia,serif}
  .banner-photo img{object-fit:cover;object-position:center 56%}
  .banner-inner{width:100%;max-width:100%}
 }
+
+
+/* Soften the hero artwork edge, like the integrated About image */
+@media(min-width:681px){
+ .hero-figure{right:-6vw;width:calc(66% + 6vw)}
+ .hero-figure img{
+  -webkit-mask-image:linear-gradient(90deg,transparent 42%,rgba(0,0,0,.28) 53%,#000 72%);
+  mask-image:linear-gradient(90deg,transparent 42%,rgba(0,0,0,.28) 53%,#000 72%);
+ }
+}
