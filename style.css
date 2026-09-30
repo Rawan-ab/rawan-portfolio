@@ -1027,3 +1027,5 @@ h1,h2,h3,h4{font-family:"Playfair Display",Georgia,serif}
 @media(max-width:680px){.tools-groups{grid-template-columns:1fr}.tools-row{gap:18px 15px}.work-title{font-size:29px}.site-footer .footer-links{flex-wrap:wrap}}
 
 .card-cx .card-primary{background:#5f83ad;color:#fff;border-color:#5f83ad}.card-cx .card-arrow{color:#5f83ad;border-color:#b8cce0;background:#fbf8f3}
+
+.card-cx{--card-accent:#5f83ad}
