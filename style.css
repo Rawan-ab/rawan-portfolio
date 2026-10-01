@@ -1132,3 +1132,8 @@ h1,h2,h3,h4{font-family:"Playfair Display",Georgia,serif}
 @media(max-width:680px){
  .hero-figure img{width:100%;height:100%;object-fit:contain;object-position:center bottom;-webkit-mask-image:none;mask-image:none}
 }
+
+
+/* Keep empty work filters visible but unavailable until the category has a finished project. */
+.work-filter:disabled{opacity:.48;cursor:not-allowed}
+.work-filter:disabled:hover{border-color:var(--border)}
