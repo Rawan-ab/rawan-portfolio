@@ -226,7 +226,7 @@ p{margin:0;}
 .work-track{
   display:grid;
   grid-template-columns:repeat(4,minmax(0,1fr));
-  gap:clamp(16px,1.6vw,24px);
+  gap:clamp(24px,2.4vw,36px);
 }
 .card{
   display:flex;flex-direction:column;
