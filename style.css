@@ -1141,3 +1141,24 @@ h1,h2,h3,h4{font-family:"Playfair Display",Georgia,serif}
 /* TAWAZON updated cover frame */
 .work-track .card-tawazon .card-media{aspect-ratio:4/3.25;padding:0;}
 .work-track .card-tawazon .tawazon-card-image{display:block;width:100%;height:100%;min-height:0;max-height:100%;object-fit:cover;object-position:center 18%;}
+
+/* Mobile hero: keep the copy beside the portrait, in the same left-to-right rhythm as desktop. */
+@media (max-width:680px){
+  .hero{min-height:0;padding-top:var(--header-h)}
+  .hero-grid{min-height:0;display:grid;grid-template-columns:minmax(0,1.15fr) minmax(105px,.85fr);gap:8px;align-items:center;justify-content:stretch;padding-block:22px}
+  .hero-copy{width:auto;max-width:none;margin:0;padding:0}
+  .hero-copy::before{content:none;display:none}
+  .hero .eyebrow{font-size:8px;line-height:1.5;letter-spacing:.1em}
+  .hero h1{font-size:clamp(22px,6.8vw,29px);line-height:1;letter-spacing:-.045em;margin:12px 0}
+  .hero .lead{font-size:11px;line-height:1.45;max-width:none;margin:0 0 13px}
+  .hero-copy .btn{font-size:10px;padding:9px 11px;gap:6px}
+  .hero-figure{position:relative;inset:auto;width:100%;max-width:none;aspect-ratio:.58;max-height:320px;min-height:220px;border-radius:90px 90px 14px 14px;overflow:hidden}
+  .hero-figure img{width:100%;height:100%;object-fit:cover;object-position:78% center}
+  .hero-note{display:none}
+}
+@media (max-width:380px){
+  .hero-grid{grid-template-columns:minmax(0,1.15fr) minmax(96px,.85fr);gap:6px}
+  .hero h1{font-size:clamp(21px,6.6vw,25px)}
+  .hero .lead{font-size:10px}
+  .hero-figure{min-height:205px;aspect-ratio:.52}
+}
