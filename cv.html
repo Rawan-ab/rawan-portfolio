@@ -58,9 +58,12 @@
 .cv-education span{display:block;font-size:12px;color:#697987;margin-top:4px}
 .cv-cert-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
 .cv-cert{background:#f1f5f6;border:1px solid #e0e8eb;border-radius:12px;padding:11px 12px;font-size:12px;line-height:1.45;color:#425b70}
-.cv-project{background:#edf4f7;border:1px solid #d8e5ea;border-radius:16px;padding:18px}
+.cv-project-list{display:grid;gap:14px}
+.cv-project{display:block;background:#edf4f7;border:1px solid #d8e5ea;border-radius:16px;padding:18px;text-decoration:none;transition:transform .2s ease,border-color .2s ease,box-shadow .2s ease}
 .cv-project strong{color:#20384e;font-size:14px}
 .cv-project p{margin:7px 0 0}
+.cv-project:hover,.cv-project:focus-visible{transform:translateY(-2px);border-color:#8db6d2;box-shadow:0 8px 20px rgba(32,56,78,.08)}
+.cv-project:focus-visible{outline:3px solid #8db6d2;outline-offset:3px}
 .cv-footer{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-top:25px;color:#77818a;font-size:12px}
 @media(max-width:780px){.cv-hero{grid-template-columns:1fr}.cv-side-card{max-width:240px}.cv-highlights{grid-template-columns:1fr}.cv-layout{grid-template-columns:1fr}}
 @media(max-width:540px){.cv-contact{display:grid}.cv-cert-grid{grid-template-columns:1fr}.cv-panel,.cv-section{border-radius:18px}.cv-hero{border-radius:22px}}
@@ -94,6 +97,7 @@
   a{color:inherit!important;text-decoration:none!important}
   .cv-footer{margin-top:10px}
 }
+ .cv-cert strong{display:block;color:var(--text);font-size:12px;line-height:1.45}.cv-cert span{display:block;color:var(--muted-text);font-size:11px;margin-top:4px}
 </style>
 </head>
 <body>
@@ -116,7 +120,7 @@
       <div>
         <p class="cv-kicker">Curriculum Vitae · 2026</p>
         <h1 id="cvTitle">Rawan Basimeah</h1>
-        <p class="cv-role">Business Analyst <span aria-hidden="true">|</span> Data &amp; Customer Experience <span aria-hidden="true">|</span> UX/UI</p>
+        <p class="cv-role">Business Analysis <span aria-hidden="true">·</span> Data &amp; Customer Experience <span aria-hidden="true">·</span> UX/UI</p>
         <p class="cv-location">Riyadh, Saudi Arabia</p>
         <div class="cv-contact">
           <a href="mailto:basimeahrawan@gmail.com">basimeahrawan@gmail.com</a>
@@ -155,7 +159,7 @@
       <div class="cv-content">
         <section class="cv-section" aria-labelledby="profile">
           <h2 id="profile">Professional Summary</h2>
-          <p>Results-driven Business Analyst with 9+ years of experience in insurance and telecommunications. Proven track record in developing enterprise dashboards, driving data-informed decision-making, and optimizing channel performance. Expertise in Power BI, Oracle BI, and survey design tools. Recently completed a Professional Diploma in UI/UX Design from Anas Academy (2025), combining analytical skills with user-centered design principles.</p>
+          <p>Business Analysis, Data &amp; Customer Experience, and UX/UI professional with 9+ years of experience across insurance and telecommunications, plus a Professional Diploma in UI/UX Design from Anas Academy (2025). I connect business and customer context with data-informed decisions and clearer digital experiences. My experience includes enterprise dashboards, channel performance analysis, Power BI, Oracle BI, and survey design tools.</p>
         </section>
         <section class="cv-section" aria-labelledby="experience">
           <h2 id="experience">Experience</h2>
@@ -199,6 +203,8 @@
         <section class="cv-section" aria-labelledby="certifications">
           <h2 id="certifications">Certifications</h2>
           <div class="cv-cert-grid">
+            <div class="cv-cert">Python Programming Basics: From Zero to First Project</div>
+            <div class="cv-cert">Data Analysis Using Python</div>
             <div class="cv-cert">Data Champion · Tawuniya Insurance Company</div>
             <div class="cv-cert">Insurance Foundations Professional · Financial Academy</div>
             <div class="cv-cert">Power BI Certification · VIFM</div>
@@ -210,11 +216,11 @@
         </section>
         <section class="cv-section" aria-labelledby="project">
           <h2 id="project">Selected Projects</h2>
-          <div class="cv-project"><strong>Reading2Gather</strong><p>UX/UI graduation project: product concept, information architecture, reader experience and companion seller dashboard prototypes.</p></div>
-          <div class="cv-project"><strong>Laffha</strong><p>Arabic social quiz experience: game design, interaction flows and browser-based implementation with coding assistance disclosed in the case study.</p></div>
-          <div class="cv-project"><strong>Customer Experience Dashboard Concept</strong><p>Power BI concept for organizing NPS, CSAT and CES views. In progress; illustrative data only, with no business impact metrics claimed.</p></div>
-          <div class="cv-project"><strong>Matcha</strong><p>Bilingual matcha e-commerce experience. Portfolio case study in progress.</p></div>
-          <div class="cv-project"><strong>Tawazon</strong><p>Digital wellness concept for building healthier screen habits.</p></div>
+          <div class="cv-project-list">
+            <a class="cv-project" href="reading2gather.html"><strong>Reading2Gather</strong><p>UX/UI graduation project: product concept, information architecture, reader experience and companion seller dashboard prototypes.</p></a>
+            <a class="cv-project" href="laffha.html"><strong>Laffha</strong><p>Arabic social quiz experience: game design, interaction flows and browser-based implementation with coding assistance disclosed in the case study.</p></a>
+            <a class="cv-project" href="tawazon.html"><strong>TAWAZON</strong><p>Wellness storefront concept for yoga, relaxation, and related products and experiences, exploring a calmer and more distinctive way to present wellness content.</p></a>
+          </div>
         </section>
       </div>
     </div>
