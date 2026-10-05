@@ -1137,3 +1137,7 @@ h1,h2,h3,h4{font-family:"Playfair Display",Georgia,serif}
 /* Keep empty work filters visible but unavailable until the category has a finished project. */
 .work-filter:disabled{opacity:.48;cursor:not-allowed}
 .work-filter:disabled:hover{border-color:var(--border)}
+
+/* TAWAZON updated cover frame */
+.work-track .card-tawazon .card-media{aspect-ratio:4/3.25;padding:0;}
+.work-track .card-tawazon .tawazon-card-image{display:block;width:100%;height:100%;min-height:0;max-height:100%;object-fit:cover;object-position:center 18%;}
